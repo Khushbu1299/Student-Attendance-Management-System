@@ -30,7 +30,8 @@ class Input extends Student                           //inheritance
 	    String choice;        		//string variables for selecting subject
 		System.out.println("*******************************************************************");
         System.out.println("Enter subject name");
-		System.out.println("Press 'j' for  java or press 'o' for os");
+		System.out.println(" ");
+		System.out.println("Press 'j' for  java or 'o' for os");
 		System.out.println("  ");
 				
 	    choice = in.nextLine();
@@ -42,17 +43,17 @@ class Input extends Student                           //inheritance
 			{
 			   
 	           String select;                             
-               System.out.println("Press 'p' for present or press 'a' for absent for '" +nameArray[i]+"'" );
+               System.out.println("Press 'p' for present or 'a' for absent for '" +nameArray[i]+"'" );
 			   
 	           select=in.nextLine();
                switch(select)                     //switch case for selecting present or absents
 			   {
 				   case "p":
-				   
+
 				   countJava++;
 				   break;
 				   case "a":
-
+                   
 				   break;
 				   default :
 				   System.out.println("Please press p or a only");
@@ -74,7 +75,7 @@ class Input extends Student                           //inheritance
 			{
 			 
 	           String selectOs;                                                      //string variable declaration
-               System.out.println("Press 'p' for present or press 'a' for absent for '" +nameArray[i]+"'" );  
+               System.out.println("Press 'p' for present or 'a' for absent for  '" +nameArray[i]+"'" );  
 	           selectOs=in.nextLine();
                switch(selectOs)
 			   {
@@ -90,8 +91,9 @@ class Input extends Student                           //inheritance
 			   }
                     //switch case for present or absent closed
 		      
-		       
-			}                                  //for loop closed
+			}                                  
+			            //for loop closed
+			 
 		       System.out.println("*******************************************************************");
 			   System.out.println("total os attendance is = "+countOs);
    			   averageOs=(countOs/5)*100;
@@ -104,7 +106,8 @@ class Input extends Student                           //inheritance
 			default :
 			System.out.println("this is not valid so please try again");
 			
-		}    // switch case for selecting subject closed
+		}  
+             		// switch case for selecting subject closed
 		
 		
 	} 	         //methode  subject closed
@@ -131,10 +134,10 @@ class Attendance                            //main class
 		fw.write("File Handling");
 		fw.close();
 		}
-		catch(Exception e)
+		catch(Exception e)                                        //Exception Handling
 		{
 			System.out.println(e);
 		}
-		System.out.println("Success..");
+		System.out.println("Success");
 	}
 }                                       
